@@ -4,7 +4,7 @@
 \alias{kaya_identity}
 \title{The Kaya Identity is an equation that expresses yearly CO2 emissions as a product of four factors}
 \usage{
-kaya_identity(pop, gdp, enInt, carbInt)
+kaya_identity(pop, gdp, enInt, carbInt, output_type = "CO2")
 }
 \arguments{
 \item{pop}{Population size (in millions)}
