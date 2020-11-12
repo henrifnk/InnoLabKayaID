@@ -11,6 +11,10 @@
 #' kaya_identity(82.4, 44,5,0.05)
 #' @export
 kaya_identity <- function(pop, gdp, enInt, carbInt) {
+  checkmate::assert_numeric(pop, lower = 0, any.missing = FALSE, len = 1)
+  checkmate::assert_numeric(gdp, lower = 0, any.missing = FALSE, len = 1)
+  checkmate::assert_numeric(enInt, lower = 0, any.missing = FALSE, len = 1)
+  checkmate::assert_numeric(carbInt, lower = 0, any.missing = FALSE, len = 1)
 
   pop * gdp * enInt * carbInt
 
